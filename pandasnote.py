@@ -33,3 +33,8 @@ column數 = data.shape[1]
 
 假設你想知道如果利用 pandas 計算上述資料中，每個 weekday 的平均 visitor 數量
 visitors_1.groupby(by="weekday")['visitor'].mean()
+
+pd.Series.nunique(dropna=True)
+#dropna 默认参数设置为True，因此在计算唯一值时排除了NULL值。
+# 统计“Team”列中不同值的个数，不包括null值，類似取set計數
+unique_value = data["Team"].nunique() 
