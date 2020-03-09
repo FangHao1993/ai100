@@ -49,4 +49,9 @@ np.unique(b,return_index=True)
     類似取set做大到小排序。
     return_index=True表示返回新列表元素在舊列表中的位置，並以列表形式儲存在s中。
 one hot enconding
-    pd.get_dummies()     
+    pd.get_dummies()  
+pd.concat([df1,df2,df3]),預設axis=0，在0軸上合併。  
+.reset_index()
+    DataFrame取index值
+.aggregate('COUNT', 'MAX', 'MIN', 'SUM', 'AVG') 
+    functions (COUNT, MAX, MIN, SUM, AVG)
