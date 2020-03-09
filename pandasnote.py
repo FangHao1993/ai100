@@ -31,10 +31,22 @@ column數 = data.shape[1]
         with open(‘example.pkl’, ‘rb’) as f:
             arr = pickle.load(f)
 
+查看檔案類型
+    type()	    返回引數的資料型別
+    dtype	    返回陣列中元素的資料型別
+    astype()	對資料型別進行轉換
+
+
 假設你想知道如果利用 pandas 計算上述資料中，每個 weekday 的平均 visitor 數量
 visitors_1.groupby(by="weekday")['visitor'].mean()
 
 pd.Series.nunique(dropna=True)
-#dropna 默认参数设置为True，因此在计算唯一值时排除了NULL值。
-# 统计“Team”列中不同值的个数，不包括null值，類似取set計數
-unique_value = data["Team"].nunique() 
+    dropna 默认参数设置为True，因此在计算唯一值时排除了NULL值。
+    统计“Team”列中不同值的个数，不包括null值，類似取set計數
+    unique_value = data["Team"].nunique()
+np.unique(b,return_index=True)
+    對於一維數組或者列表，unique函數去除其中重複的元素，並按元素由大到小返回一個新的無元素重複的元組或者列表
+    類似取set做大到小排序。
+    return_index=True表示返回新列表元素在舊列表中的位置，並以列表形式儲存在s中。
+one hot enconding
+    pd.get_dummies()     
