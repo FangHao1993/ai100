@@ -38,7 +38,7 @@ column數 = data.shape[1]
 
 
 假設你想知道如果利用 pandas 計算上述資料中，每個 weekday 的平均 visitor 數量
-visitors_1.groupby(by="weekday")['visitor'].mean()
+    visitors_1.groupby(by="weekday")['visitor'].mean()
 
 pd.Series.nunique(dropna=True)
     dropna 默认参数设置为True，因此在计算唯一值时排除了NULL值。
@@ -55,3 +55,28 @@ pd.concat([df1,df2,df3]),預設axis=0，在0軸上合併。
     DataFrame取index值
 .aggregate('COUNT', 'MAX', 'MIN', 'SUM', 'AVG') 
     functions (COUNT, MAX, MIN, SUM, AVG)
+.quantile(0.25,0.5,0.75,0.99)
+    分位數
+.describe()  
+    對數據中每一列數進行統計分析
+    一列數據全是'number'
+        count：一列的元素個數；
+        意思是：一列數據的預期；
+        std：一列數據的均方差；（方差的算術平方根，反映一個數據集的離散程度：變量，數據間的差異偏差，數據集中數據的離散程度不斷；越小，數據間的大小差異越 小，數據集中的數據離散程度越低）
+        min：一列數據中的預設；
+        max：一列數中的高度；
+        25％：一列數據中，前25％的數據的先前；
+        50％：一列數據中，前50％的數據的先前；
+        75％：一列數據中，前75％的數據的先前；
+    一列數據：'類別'，'類別' +'數字'
+        count：一列數據的元素個數；
+        unique：一列數據中元素的種類；
+        top：一列數據中出現頻率最高的元素；
+        freq：一列數據中出現頻率最高的元素的個數；
+    一列數據：object（如時間序列）
+        第一：開始時間；
+        上一篇：結束時間；
+.replace({365243: np.nan}, inplace = True)
+    {?: np.nan} 單值用np.nan替換
+
+
