@@ -78,5 +78,9 @@ pd.concat([df1,df2,df3]),預設axis=0，在0軸上合併。
         上一篇：結束時間；
 .replace({365243: np.nan}, inplace = True)
     {?: np.nan} 單值用np.nan替換
-
+np.log1p(x)
+    ln(x)
+.fillna(x,method = 'backfill'，'bfill'，'pad'，'ffill'，'None')
+    method預設'None'
+    將nan替換為x
 
