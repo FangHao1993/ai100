@@ -25,5 +25,8 @@ Normalization(正規化)
     MinMaxScaler().fit_transform(df)
 Standardization(標準化)
     將原始資料轉換成符合標準常態分佈的樣態( 平均值=0、標準差=1 )。
-.clip(800,2500)
-    將數值壓在'800'~'2500'之間，小於'800'為'800'，大於'2500'為'2500'。
+    Z轉換 = (x-mean(x)) / std(x)
+    空間轉匯
+        Y = 0 ~ 1 , (x-min(x)) / (max(x) - min(x))
+        Y = -1 ~ 1 , (((x-min(x)) / (max(x) - min(x))) - 0.5) * 2
+        Y = 0 ~ 1 , (針對特別影像) , x/255

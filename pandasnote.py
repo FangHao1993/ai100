@@ -57,6 +57,7 @@ pd.concat([df1,df2,df3]),預設axis=0，在0軸上合併。
     functions (COUNT, MAX, MIN, SUM, AVG)
 .quantile(0.25,0.5,0.75,0.99)
     分位數
+    np.percentile()與分位數類似
 .describe()  
     對數據中每一列數進行統計分析
     一列數據全是'number'
@@ -83,4 +84,14 @@ np.log1p(x)
 .fillna(x,method = 'backfill'，'bfill'，'pad'，'ffill'，'None')
     method預設'None'
     將nan替換為x
-
+scipy.stats.mode()
+    尋找出現次數最多的
+.clip(800,2500)
+    將數值壓在'800'~'2500'之間，小於'800'為'800'，大於'2500'為'2500'。
+mode()
+    眾數，回傳出現最多的項目(9000)及次數(6385)。
+    ModeResult(mode=array([9000.]), count=array([6385]))
+defaultdict()
+    相較於dict()，如無key會回傳空值而不是Error
+    defaultdict(['a']) = []
+    dict(['a']) = Error
