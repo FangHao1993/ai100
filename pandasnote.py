@@ -95,3 +95,16 @@ defaultdict()
     相較於dict()，如無key會回傳空值而不是Error
     defaultdict(['a']) = []
     dict(['a']) = Error
+
+.loc[[row],[columns]]
+
+pd.cut(x,bins,right=True,labels=None,retbins=False,precision=3,include_lowest=False)
+    X：進行劃分的一維數組
+    bins : 1,整數---將x劃分為多少個等間距的區間
+    right : 是否包含右端點 
+    labels : 是否用標記來代替返回的bins
+    retbins: 是否返回間距bins
+    precision: 精度
+    include_lowest:是否包含左端點
+np.inf
+    numpy用IEEE-754格式，一般numpy.inf是float64格式，能表示最大的数是±(1−2−53)∗21024=±1.79769×10308。
