@@ -108,3 +108,8 @@ pd.cut(x,bins,right=True,labels=None,retbins=False,precision=3,include_lowest=Fa
     include_lowest:是否包含左端點
 np.inf
     numpy用IEEE-754格式，一般numpy.inf是float64格式，能表示最大的数是±(1−2−53)∗21024=±1.79769×10308。
+
+np.corrcoef(x,y)
+    皮爾遜相關係數的變化範圍為-1到1。 係數的值為1意味著X 和 Y可以很好的由直線方程式來描述，所有的數據點都很好的落在一條 直線上，且 Y 隨著 X 的增加而增加。係數的值為−1意味著所有的數據點都落在直線上，且 Y 隨著 X 的增加而減少。係數的值為0意味著兩個變數之間沒有線性關係。
+plt.scatter(x,y)
+    散點圖
