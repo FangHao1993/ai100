@@ -106,6 +106,10 @@ pd.cut(x,bins,right=True,labels=None,retbins=False,precision=3,include_lowest=Fa
     retbins: 是否返回間距bins
     precision: 精度
     include_lowest:是否包含左端點
+    等寬劃分 (對應 pandas 中的cut) 
+pd.qcut()
+    等頻劃分 (對應 pandas 中的 qcut) 可以依實際需求來自己定義離散化的方式
+
 np.linspace(start, stop, num=50, endpoint=True, retstep=False, dtype=None)
     在指定的間隔內返回均勻間隔的數字。
     返回num均勻分佈的樣本，在[start, stop]。
