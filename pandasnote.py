@@ -106,6 +106,11 @@ pd.cut(x,bins,right=True,labels=None,retbins=False,precision=3,include_lowest=Fa
     retbins: 是否返回間距bins
     precision: 精度
     include_lowest:是否包含左端點
+np.linspace(start, stop, num=50, endpoint=True, retstep=False, dtype=None)
+    在指定的間隔內返回均勻間隔的數字。
+    返回num均勻分佈的樣本，在[start, stop]。
+    這個區間的端點可以任意的被排除在外。
+
 np.inf
     numpy用IEEE-754格式，一般numpy.inf是float64格式，能表示最大的数是±(1−2−53)∗21024=±1.79769×10308。
 
