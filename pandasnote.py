@@ -136,15 +136,19 @@ np.random
     np.random.choice([0,1,2], size=3)
         隨機回傳[0,1,2]到list，list長度為3
 
-
-plt.scatter(x,y)
-    散點圖
-
 ax.annotate("r = {:.2f}".format(r),
             xy=(.2, .8), xycoords=ax.transAxes,
             size = 20)
     xy=(.2, .8) => 標註點在 xy 的座標在 (0.2, 0.8) 的位置
     xycoords=ax.transAxes => 標注點的定位方式，transAxes 是以 圖表的座標定位
+
+app_train, app_test = app_train.align(app_test, join = 'inner', axis = 1)
+    調整欄位數, 移除出現在 training data 而沒有出現 testing data 中的欄位
+    只留下交集的columns
+
+plt.scatter(x,y)
+    散點圖
+
 
 for index,key  in enumerate(keys)
     做index
