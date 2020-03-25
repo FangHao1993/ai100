@@ -120,5 +120,35 @@ np.inf
 
 np.corrcoef(x,y)
     皮爾遜相關係數的變化範圍為-1到1。 係數的值為1意味著X 和 Y可以很好的由直線方程式來描述，所有的數據點都很好的落在一條 直線上，且 Y 隨著 X 的增加而增加。係數的值為−1意味著所有的數據點都落在直線上，且 Y 隨著 X 的增加而減少。係數的值為0意味著兩個變數之間沒有線性關係。
+    corrcoef是對兩個列向量，或者一個矩陣的每列進行的，用的是pearson相關
+    np.corr()
+        corr可以對兩個矩陣的每列進行，也可以對一個矩陣的每列進行，相關的類型可以是pearson或者Kendall或者Spearman
+        例如corr（X，Y，'type'，'Pearson'）
+np.random
+    numpy.random.randn(row,col)
+        （d0，d1，…，dn）是從標準正態分佈中返回一個或多個樣本值。
+    numpy.random.rand()
+        （d0，d1，…，dn）的隨機樣本放置[0，1）中。
+    
+    sample(a,n)
+
+        從序列a中隨機抽取n個元素，連接n個元素生以列表形式返回。
+    np.random.choice([0,1,2], size=3)
+        隨機回傳[0,1,2]到list，list長度為3
+
+
 plt.scatter(x,y)
     散點圖
+
+ax.annotate("r = {:.2f}".format(r),
+            xy=(.2, .8), xycoords=ax.transAxes,
+            size = 20)
+    xy=(.2, .8) => 標註點在 xy 的座標在 (0.2, 0.8) 的位置
+    xycoords=ax.transAxes => 標注點的定位方式，transAxes 是以 圖表的座標定位
+
+for index,key  in enumerate(keys)
+    做index
+
+def corr_func(x, y, **kwargs):
+    **kwargs = dictionary變等號
+    {a:1,b:2,c:3} => a=1,b=2,c=3
