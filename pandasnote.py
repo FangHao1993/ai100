@@ -80,7 +80,10 @@ pd.concat([df1,df2,df3]),預設axis=0，在0軸上合併。
 .replace({365243: np.nan}, inplace = True)
     {?: np.nan} 單值用np.nan替換
 np.log1p(x)
+    log(1+x)
     ln(x)
+np.expm1(x)
+    exp(x)-1
 .fillna(x,method = 'backfill'，'bfill'，'pad'，'ffill'，'None')
     method預設'None'
     將nan替換為x
