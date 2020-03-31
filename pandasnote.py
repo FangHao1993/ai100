@@ -152,6 +152,10 @@ app_train, app_test = app_train.align(app_test, join = 'inner', axis = 1)
 plt.scatter(x,y)
     散點圖
 
+hash(x)用於獲取 x 個（字符串或數值等）的哈希值。
+
+map() 會根據提供的函數對指定序列做映射。
+    map(function, iterable, ...)
 
 for index,key  in enumerate(keys)
     做index
