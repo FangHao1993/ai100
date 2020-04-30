@@ -25,10 +25,20 @@ EDA = Exploratory Data Analysis = '探索式資料分析'
     時間型特徵：特殊之處在於有週期性
 
 Normalization(正規化)
+Regularization(正規化)
     將資料在保持原始的樣態下縮放入 [0,1] 區間中。
     MinMaxScaler().fit_transform(df)
     MinMaxScaler：歸一到 [ 0，1 ] 
     MaxAbsScaler：歸一到 [ -1，1 ] 
+
+過擬合
+    增加資料量
+    降低模型複雜度•
+    使⽤用正規化 (Regularization)
+欠擬合
+    增加模型複雜度
+    減輕或不使⽤正規化
+
 
 Standardization(標準化)
     將原始資料轉換成符合標準常態分佈的樣態( 平均值=0、標準差=1 )。
@@ -54,3 +64,9 @@ Standardization(標準化)
     過濾法 (Filter) : 選定統計數值與設定門檻，刪除低於門檻的特徵
     包裝法 (Wrapper) : 根據⽬標函數，逐步加入特徵或刪除特徵
     嵌入法 (Embedded) : 使用機器學習模型，根據擬合後的係數，刪除係數低於⾨檻的特徵
+
+模型的泛化能力 (generalization)
+    泛化能力越高代表模型在沒看過的測試資料上的表現能夠越好
+    機器學習算法對新鮮樣本的適應能力
+分類問題與回歸問題分別可用的目標函數()
+    分類問題可使用交叉商 (Cross Entropy)。回歸問題可使用均方差 (Mean Square Error)
