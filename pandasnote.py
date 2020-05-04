@@ -138,7 +138,8 @@ np.random
         從序列a中隨機抽取n個元素，連接n個元素生以列表形式返回。
     np.random.choice([0,1,2], size=3)
         隨機回傳[0,1,2]到list，list長度為3
-
+np.where(condition, x, y)
+    滿足條件(condition)，輸出x，不滿足輸出y。
 ax.annotate("r = {:.2f}".format(r),
             xy=(.2, .8), xycoords=ax.transAxes,
             size = 20)
