@@ -69,4 +69,6 @@ Standardization(標準化)
     泛化能力越高代表模型在沒看過的測試資料上的表現能夠越好
     機器學習算法對新鮮樣本的適應能力
 分類問題與回歸問題分別可用的目標函數()
-    分類問題可使用交叉商 (Cross Entropy)。回歸問題可使用均方差 (Mean Square Error)
+    分類問題可使用交叉商 (Cross Entropy)、(AUC)、()。
+    回歸問題可使用均方差 (Mean Square Error)、(R Square)
+    但如果有特別希望哪⼀類別不要分錯，則可使用 F1-Score，觀察 Recall 值或是Precision 值。若是多分類問題，則可使用 top-k accuracy，k 代表模型預測前 k 個類別有包含正確類別即為正確 (ImageNet 競賽通常都是比Top-5 Accuracy)
