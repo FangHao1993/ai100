@@ -1,6 +1,8 @@
 MAC : 進Ａnaconda虛擬環境
     source ~/.bash_profile
     source activate test
+    
+資料視覺化 : D3.js
 
 MAE : 將兩個陣列相減後, 取絕對值(abs), 再將整個陣列加總成一個數字(sum), 最後除以y的長度(len), 因此稱為"平均絕對誤差"
 MAE = sum(abs(y - yp)) / len(y)

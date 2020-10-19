@@ -40,3 +40,9 @@ cell = tf.contrib.rnn.BasicRNNCell(num_hidden(隱藏神經元個數、memory))
 cell.zero_state(batch_size, dtype=tf.float32)
 #初始化cell狀態
 MS COCO dataset 資料集主要解決3個問題：目標檢測，目標之間的上下文關係，目標的2維上的精確定位。
+
+
+
+sftp
+10.124.131.87
+10.124.131.81
